@@ -19,7 +19,7 @@ class ItemFactory extends Factory
         return [
             'category_id' => fake()->numberBetween(1, 10),
             'name' => fake()->unique()->word(),
-            'price' => fake()->randomFloat(1000, 10000000),
+            'price' => fake()->randomFloat(null, 1000, 10000000),
             'stock' => fake()->numberBetween(1, 100)
         ];
     }
